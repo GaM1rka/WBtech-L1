@@ -9,7 +9,7 @@ import (
 func worker(wg *sync.WaitGroup) {
 	cnt := 0
 	for {
-		fmt.Println("Goroutine is working...")
+		fmt.Println("Goroutine is working..")
 		time.Sleep(1 * time.Second)
 		cnt++
 		if cnt >= 5 {

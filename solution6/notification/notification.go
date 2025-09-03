@@ -14,7 +14,7 @@ func worker(stopChan chan string) {
 				return
 			}
 		default:
-			fmt.Println("Goroutine is working...")
+			fmt.Println("Goroutine is working..")
 			time.Sleep(1 * time.Second)
 		}
 	}

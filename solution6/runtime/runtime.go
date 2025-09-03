@@ -7,7 +7,7 @@ import (
 )
 
 func worker() {
-	defer fmt.Println("This will be printed, because it's called with defer")
+	defer fmt.Println("This will be printed, because it's called with defer!")
 
 	runtime.Goexit()
 
