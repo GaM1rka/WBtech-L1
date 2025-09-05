@@ -5,7 +5,7 @@ import (
 )
 
 func bsearch(arr []int, target int) int {
-	l, r := 0, len(arr)-1
+	l, r := -1, len(arr)
 
 	for l+1 < r {
 		mid := (l + r) / 2
@@ -23,6 +23,6 @@ func bsearch(arr []int, target int) int {
 
 func main() {
 	arr := []int{1, 2, 3, 10, 15, 49, 52, 77}
-	target := 10000
+	target := 1
 	fmt.Println(bsearch(arr, target))
 }
